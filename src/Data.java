@@ -4,22 +4,19 @@ public class Data {
     private YearTemp[] yearT;
 
     public Data() {
-        yearT = new YearTemp[6];
-        yearT[0] = new YearTemp(2014, 15.3, 13.1, 15.2, 21.4, 25.6, 29.9, 30.0,
-                29.8, 25.4, 25.0, 19.0, 18.4 );
-        yearT[1] = new YearTemp(2014, 12.2, 12.2, 15.9, 22.4, 26.0, 28.9, 30.1,
-                32.0, 23.4, 21.0, 20.0, 16.4 );
-        yearT[2] = new YearTemp(2014, 10.7, 10.9, 17.9, 23.4, 24.2, 29.7, 30.2,
-                30.5, 25.0, 22.2, 18.9, 17.2 );
-        yearT[3] = new YearTemp(2014, 14.0, 12.1, 19.0, 24.4, 25.3, 29.7, 30.3,
-                30.6, 22.0, 20.8, 20.1, 15.3 );
-        yearT[4] = new YearTemp(2014, 13.9, 11.1, 18.2, 25.4, 26.6, 29.0, 30.4,
-                29.0, 21.8, 20.4, 18.2, 15.0 );
-        yearT[5] = new YearTemp(2014, 12.2, 14.1, 17.2, 25.0, 27.6, 29.1, 31.0,
-                31.0, 24.0, 25.4, 21.0, 16.0 );
-
-
-
+        YearTemp y1 = new YearTemp(2014, 15, 13, 15, 21, 25, 29, 30,
+                29, 25, 25, 19, 18 );
+        YearTemp y2 = new YearTemp(2015, 12, 12, 15, 22, 26, 28, 30,
+                32, 23, 21, 20, 16 );
+        YearTemp y3 = new YearTemp(20, 10, 10, 17, 23, 24, 29, 30,
+                30, 25, 22, 18, 17 );
+        YearTemp y4 = new YearTemp(2016, 14, 12, 19, 24, 25, 29, 30,
+                30, 22, 20, 20, 15 );
+        YearTemp y5 = new YearTemp(2017, 13, 11, 18, 25, 26, 29, 30,
+                29, 21, 20, 18, 15 );
+        YearTemp y6 = new YearTemp(2018, 12, 14, 17, 25, 27, 29, 31,
+                31, 24, 25, 21, 16 );
+        this.yearT = new YearTemp[] {y1, y2, y3, y4, y5, y6};
     }
 
 
@@ -31,8 +28,6 @@ public class Data {
     public void setYearT(YearTemp[] yearT) {
         this.yearT = yearT;
     }
-
-
 
 
 }

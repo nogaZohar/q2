@@ -1,9 +1,9 @@
 public class MonthTemp {
 
     private String month;
-    private double temperature;
+    private int temperature;
 
-    public MonthTemp(String month, double temperature) {
+    public MonthTemp(String month, int temperature) {
         this.month = month;
         this.temperature = temperature;
     }
@@ -18,11 +18,11 @@ public class MonthTemp {
         this.month = month;
     }
 
-    public Double getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(Double temperature) {
+    public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
 
